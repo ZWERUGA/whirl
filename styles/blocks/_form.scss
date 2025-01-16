@@ -1,0 +1,35 @@
+@use "../helpers/" as *;
+
+.form {
+  &-item {
+    position: relative;
+  }
+
+  &-control {
+    width: 100%;
+    padding-block: rem(7);
+    padding-left: rem(15);
+    padding-right: rem(30);
+    font-size: rem(13);
+    border: none;
+    border-bottom: var(--border);
+
+    &:focus {
+      border-color: var(--color-accent-base);
+    }
+
+    &__button {
+      padding-inline: rem(2);
+      position: absolute;
+
+      @include abs-y;
+
+      right: 0;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+
+      outline-offset: rem(0);
+    }
+  }
+}
