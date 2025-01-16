@@ -1,0 +1,36 @@
+@use "helpers" as *;
+
+:root {
+  // Цвета
+  --color-light: #ffffff;
+  --color-dark: #1f1f1f;
+  --color-gray: #626a72;
+  --color-light-gray-base: #c2cdd8;
+  --color-light-gray-alt: #dee5eb;
+
+  --color-menu: #33383f;
+
+  --color-accent-base: #0070a0;
+  --color-accent-alt: #507aa0;
+
+  --color-card-yellow: #faea73;
+  --color-card-cyan: #cceff6;
+  --color-card-pink: #f7cedc;
+
+  --color-badge-font: #2c90c9;
+  --color-badge-bg: #e6f7ff;
+
+  // Рамка
+  --border: #{rem(1)} solid var(--color-light-gray-base);
+
+  // Шрифты
+  --font-family-base: "Inter", sans-serif;
+  --font-family-accent: "Fraunces", sans-serif;
+
+  // Границы контейнера
+  --container-width: #{rem(1130)};
+  --container-padding-x: #{rem(0)};
+
+  // Время анимации
+  --transition-duration: 0.2s;
+}
