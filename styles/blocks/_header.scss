@@ -1,0 +1,29 @@
+@use "../helpers/" as *;
+
+.header {
+  &__inner {
+    padding-block: rem(20);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: rem(39);
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      column-gap: rem(24);
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    // &-link {
+    //   @include hover {
+    //     color: var(--color-accent-base);
+    //   }
+    // }
+  }
+}

@@ -1,7 +1,7 @@
 @use "helpers" as *;
 
 body {
-  @include fluid-text(18, 14);
+  @include fluid-text(15, 14);
 
   display: flex;
   flex-direction: column;
@@ -63,10 +63,24 @@ svg * {
 }
 
 a {
+  position: relative;
   color: inherit;
 
+  &:not(.logo, .actions-link--button):before {
+    content: "";
+    position: absolute;
+    bottom: rem(-2);
+    width: 100%;
+    height: 1px;
+    transition: background-color var(--transition-duration) linear;
+  }
+
   @include hover {
-    color: var(--color-accent);
+    color: var(--color-accent-base);
+
+    &:not(.logo, .actions-link--button):before {
+      background-color: var(--color-accent-base);
+    }
   }
 
   &[class] {
