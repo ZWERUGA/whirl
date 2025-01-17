@@ -15,7 +15,10 @@
 @use "./blocks/hero";
 @use "./blocks/card";
 
+@use "./blocks/details";
+
 // .header,
+// main > *:not(:last-child),
 // .footer {
 //   display: none !important;
 // }
