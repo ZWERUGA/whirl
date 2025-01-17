@@ -287,7 +287,7 @@ h6,
 
 h1,
 .h1 {
-  line-height: 1.9;
+  line-height: 1.1;
 }
 
 h2,
@@ -318,31 +318,16 @@ svg * {
 }
 
 a {
-  position: relative;
   color: inherit;
-}
-a:not(.logo, .actions-link--button, .footer__soc1als-link):before {
-  content: "";
-  position: absolute;
-  bottom: 0rem;
-  width: 100%;
-  height: 1px;
-  transition: background-color var(--transition-duration) linear;
 }
 @media (any-hover: hover) {
   a:hover {
     color: var(--color-accent-base);
   }
-  a:hover:not(.logo, .actions-link--button, .footer__soc1als-link):before {
-    background-color: var(--color-accent-base);
-  }
 }
 @media (any-hover: none) {
   a:active {
     color: var(--color-accent-base);
-  }
-  a:active:not(.logo, .actions-link--button, .footer__soc1als-link):before {
-    background-color: var(--color-accent-base);
   }
 }
 a[class] {
@@ -385,44 +370,56 @@ button[aria-label]::before {
   display: flex;
   align-items: center;
 }
+.header .actions-link {
+  padding-block: 0.375rem;
+  padding-inline: 1.9375rem;
+}
 
 .actions {
   display: flex;
   align-items: center;
-  column-gap: 1.9375rem;
 }
 .actions-link {
   color: var(--color-accent-base);
+  border: 0.0625rem solid transparent;
+}
+@media (any-hover: hover) {
+  .actions-link:hover {
+    border-color: var(--color-accent-base);
+  }
+}
+@media (any-hover: none) {
+  .actions-link:active {
+    border-color: var(--color-accent-base);
+  }
 }
 .actions-link--button {
   position: relative;
   padding: 0.375rem 1.25rem;
   color: var(--color-light);
   background-color: var(--color-accent-base);
+  border: 0.0625rem solid transparent;
 }
-.actions-link--button::before {
-  position: absolute;
-  content: "";
-  height: 0.0625rem;
-  bottom: 0.4375rem;
-  width: calc(100% - 2.5rem);
-  transition: background-color var(--transition-duration) linear;
+.actions-link--button-lg {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
 }
 @media (any-hover: hover) {
   .actions-link--button:hover {
-    color: var(--color-light);
-  }
-  .actions-link--button:hover::before {
-    background-color: var(--color-light);
+    background-color: transparent;
+    border: 0.0625rem solid var(--color-accent-base);
   }
 }
 @media (any-hover: none) {
   .actions-link--button:active {
-    color: var(--color-light);
+    background-color: transparent;
+    border: 0.0625rem solid var(--color-accent-base);
   }
-  .actions-link--button:active::before {
-    background-color: var(--color-light);
-  }
+}
+.actions-link--arrow {
+  display: flex;
+  align-items: center;
+  column-gap: 0.3125rem;
 }
 
 .icon {
@@ -523,6 +520,84 @@ button[aria-label]::before {
   border: none;
   background-color: transparent;
   outline-offset: 0rem;
+}
+
+.hero {
+  display: grid;
+  padding-top: 4.375rem;
+  padding-bottom: 7.5rem;
+}
+.hero__body-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.hero__body-title {
+  padding-top: 3.1875rem;
+  max-width: 30.3125rem;
+  font-size: 3.625rem;
+  letter-spacing: -1px;
+}
+.hero__body-description {
+  padding-top: 1.3125rem;
+  max-width: 23.75rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.9px;
+}
+.hero__body-actions {
+  padding-top: 2rem;
+}
+.hero__body .actions-link {
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+}
+.hero__companies {
+  padding-top: 8.1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+.hero__companies-title {
+  font-size: 1.5rem;
+  font-family: var(--font-family-base);
+}
+.hero__companies-list {
+  display: flex;
+  align-items: center;
+  column-gap: 3.8125rem;
+}
+.hero__advantages {
+  padding-top: 10rem;
+}
+.hero__advantages-list {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  padding-inline: 2.5rem;
+}
+.card-img {
+  min-height: 2.8125rem;
+}
+.card-title {
+  padding-top: 0.5rem;
+  font-size: 1.5625rem;
+}
+.card-description {
+  padding-top: 0.6875rem;
+}
+.card--yellow {
+  background-color: var(--color-card-yellow);
+}
+.card--cyan {
+  background-color: var(--color-card-cyan);
+}
+.card--pink {
+  background-color: var(--color-card-pink);
 }
 
 /*# sourceMappingURL=main.css.map */

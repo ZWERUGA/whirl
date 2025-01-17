@@ -3,32 +3,37 @@
 .actions {
   display: flex;
   align-items: center;
-  column-gap: rem(31);
 
   &-link {
     color: var(--color-accent-base);
+    border: rem(1) solid transparent;
+
+    @include hover {
+      border-color: var(--color-accent-base);
+    }
 
     &--button {
       position: relative;
       padding: rem(6) rem(20);
       color: var(--color-light);
       background-color: var(--color-accent-base);
+      border: rem(1) solid transparent;
 
-      &::before {
-        position: absolute;
-        content: "";
-        height: rem(1);
-        bottom: rem(7);
-        width: calc(100% - rem(40));
-        transition: background-color var(--transition-duration) linear;
+      &-lg {
+        padding-block: rem(8);
+        padding-inline: rem(32);
       }
 
       @include hover {
-        color: var(--color-light);
-        &::before {
-          background-color: var(--color-light);
-        }
+        background-color: transparent;
+        border: rem(1) solid var(--color-accent-base);
       }
+    }
+
+    &--arrow {
+      display: flex;
+      align-items: center;
+      column-gap: rem(5);
     }
   }
 }

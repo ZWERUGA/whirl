@@ -1,0 +1,32 @@
+@use "../helpers/" as *;
+
+.card {
+  padding-top: rem(32);
+  padding-bottom: rem(40);
+  padding-inline: rem(40);
+
+  &-img {
+    min-height: rem(45);
+  }
+
+  &-title {
+    padding-top: rem(8);
+    font-size: rem(25);
+  }
+
+  &-description {
+    padding-top: rem(11);
+  }
+
+  &--yellow {
+    background-color: var(--color-card-yellow);
+  }
+
+  &--cyan {
+    background-color: var(--color-card-cyan);
+  }
+
+  &--pink {
+    background-color: var(--color-card-pink);
+  }
+}

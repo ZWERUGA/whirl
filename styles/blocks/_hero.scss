@@ -1,0 +1,66 @@
+@use "../helpers/" as *;
+
+.hero {
+  display: grid;
+  padding-top: rem(70);
+  padding-bottom: rem(120);
+
+  &__body {
+    &-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+
+    &-title {
+      padding-top: rem(51);
+      max-width: rem(485);
+      font-size: rem(58);
+      letter-spacing: -1px;
+    }
+
+    &-description {
+      padding-top: rem(21);
+      max-width: rem(380);
+      font-size: rem(20);
+      letter-spacing: 0.9px;
+    }
+
+    &-actions {
+      padding-top: rem(32);
+    }
+
+    .actions-link {
+      padding-block: rem(8);
+      padding-inline: rem(24);
+    }
+  }
+
+  &__companies {
+    padding-top: rem(131);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(24);
+
+    &-title {
+      font-size: rem(24);
+      font-family: var(--font-family-base);
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: rem(61);
+    }
+  }
+
+  &__advantages {
+    padding-top: rem(160);
+
+    &-list {
+      display: grid;
+      column-gap: rem(32);
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
