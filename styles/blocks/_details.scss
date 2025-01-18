@@ -10,15 +10,6 @@
       row-gap: rem(61);
     }
 
-    &-title {
-      max-width: rem(650);
-      font-size: rem(42);
-
-      &--sm {
-        font-size: rem(39);
-      }
-    }
-
     &-info {
       display: grid;
       align-items: center;

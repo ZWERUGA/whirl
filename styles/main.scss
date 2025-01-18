@@ -15,7 +15,9 @@
 @use "./blocks/hero";
 @use "./blocks/card";
 
+@use "./blocks/title";
 @use "./blocks/details";
+@use "./blocks/features";
 
 // .header,
 // main > *:not(:last-child),

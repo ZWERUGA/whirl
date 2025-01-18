@@ -1,0 +1,10 @@
+@use "../helpers/" as *;
+
+.title {
+  max-width: rem(650);
+  font-size: rem(42);
+
+  &--sm {
+    font-size: rem(39);
+  }
+}

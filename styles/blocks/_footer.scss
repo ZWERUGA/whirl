@@ -26,6 +26,10 @@
   &-link {
     font-size: rem(13);
     color: var(--color-accent-base);
+
+    @include hover {
+      color: var(--color-dark);
+    }
   }
 
   &__links {

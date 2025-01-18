@@ -1,0 +1,34 @@
+@use "../helpers/" as *;
+
+.features {
+  padding-block: rem(120);
+
+  &__body {
+    &-inner {
+      display: grid;
+      grid-template-columns: rem(300) 1fr;
+      column-gap: rem(98);
+    }
+  }
+
+  &-cards {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: rem(32);
+    }
+
+    &__item {
+      display: grid;
+    }
+
+    &__title {
+      padding-top: rem(8);
+      font-size: rem(25);
+    }
+
+    &__description {
+      padding-top: rem(11);
+    }
+  }
+}
