@@ -1,0 +1,71 @@
+@use "../helpers/" as *;
+
+.blog {
+  padding-block: rem(80);
+  background-color: var(--color-bg-light-gray);
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-title {
+    font-size: rem(42);
+  }
+
+  &-link {
+    font-size: rem(17);
+    color: var(--color-accent-base);
+    padding-block: rem(8);
+    padding-inline: rem(32);
+  }
+
+  &-body {
+    margin-top: rem(50);
+    display: flex;
+    justify-content: space-between;
+    column-gap: rem(32);
+  }
+
+  &-card {
+    &__img {
+      &-inner {
+        min-height: rem(245);
+        padding-top: rem(50);
+        padding-bottom: rem(24);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__inner {
+      padding-top: rem(25);
+      padding-bottom: rem(27);
+      padding-inline: rem(24);
+      background-color: var(--color-light);
+    }
+
+    &__badge {
+      padding-block: rem(4);
+      padding-inline: rem(12);
+      color: var(--color-badge-font);
+      background-color: var(--color-badge-bg);
+    }
+
+    &__title {
+      margin-top: rem(8);
+      font-size: rem(25);
+    }
+
+    &__description {
+      margin-top: rem(11);
+      font-size: rem(14);
+    }
+
+    &__time {
+      margin-top: rem(16);
+    }
+  }
+}

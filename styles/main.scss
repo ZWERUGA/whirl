@@ -21,9 +21,5 @@
 @use "./blocks/features";
 @use "./blocks/hero-alt";
 @use "./blocks/tasks";
-
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
-}
+@use "./blocks/blog";
+@use "./blocks/trial";
