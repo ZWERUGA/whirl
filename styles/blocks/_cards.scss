@@ -1,0 +1,22 @@
+@use "../helpers/" as *;
+
+.cards {
+  &-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-img {
+    @include square(#{rem(55)});
+  }
+
+  &-title {
+    display: flex;
+    padding-top: rem(8);
+    font-size: rem(25);
+  }
+
+  &-description {
+    padding-top: rem(11);
+  }
+}

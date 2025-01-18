@@ -15,10 +15,12 @@
 @use "./blocks/hero";
 @use "./blocks/card";
 
+@use "./blocks/cards";
 @use "./blocks/title";
 @use "./blocks/details";
 @use "./blocks/features";
 @use "./blocks/hero-alt";
+@use "./blocks/tasks";
 
 .header,
 main > *:not(:last-child),

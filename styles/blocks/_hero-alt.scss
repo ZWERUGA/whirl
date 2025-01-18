@@ -26,10 +26,13 @@
 
   &__list {
     padding-top: rem(20);
+    display: grid;
+    row-gap: rem(5);
   }
 
   &__item {
     position: relative;
+    font-size: rem(16);
     padding-left: rem(26);
 
     &::before {

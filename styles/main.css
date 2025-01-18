@@ -629,6 +629,23 @@ button[aria-label]::before {
   background-color: var(--color-card-pink);
 }
 
+.cards-item {
+  display: flex;
+  flex-direction: column;
+}
+.cards-img {
+  width: 3.4375rem;
+  height: 3.4375rem;
+}
+.cards-title {
+  display: flex;
+  padding-top: 0.5rem;
+  font-size: 1.5625rem;
+}
+.cards-description {
+  padding-top: 0.6875rem;
+}
+
 .title {
   max-width: 40.625rem;
   font-size: 2.625rem;
@@ -714,16 +731,6 @@ button[aria-label]::before {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
 }
-.features-cards__item {
-  display: grid;
-}
-.features-cards__title {
-  padding-top: 0.5rem;
-  font-size: 1.5625rem;
-}
-.features-cards__description {
-  padding-top: 0.6875rem;
-}
 
 .hero-alt {
   padding-block: 5rem;
@@ -746,9 +753,12 @@ button[aria-label]::before {
 }
 .hero-alt__list {
   padding-top: 1.25rem;
+  display: grid;
+  row-gap: 0.3125rem;
 }
 .hero-alt__item {
   position: relative;
+  font-size: 1rem;
   padding-left: 1.625rem;
 }
 .hero-alt__item::before {
@@ -762,6 +772,24 @@ button[aria-label]::before {
 }
 .hero-alt__actions-link {
   margin-top: 1.6875rem;
+}
+
+.tasks {
+  padding-block: 7.5rem;
+}
+.tasks-title {
+  font-size: 2.625rem;
+}
+.tasks-description {
+  margin-top: 1.3125rem;
+  max-width: 40.1875rem;
+  font-size: 1.125rem;
+}
+.tasks-list {
+  margin-top: 4.0625rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4.0625rem;
 }
 
 .header,
