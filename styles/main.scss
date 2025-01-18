@@ -18,9 +18,10 @@
 @use "./blocks/title";
 @use "./blocks/details";
 @use "./blocks/features";
+@use "./blocks/hero-alt";
 
-// .header,
-// main > *:not(:last-child),
-// .footer {
-//   display: none !important;
-// }
+.header,
+main > *:not(:last-child),
+.footer {
+  display: none !important;
+}

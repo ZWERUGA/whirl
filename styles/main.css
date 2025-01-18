@@ -401,10 +401,6 @@ button[aria-label]::before {
   background-color: var(--color-accent-base);
   border: 0.0625rem solid transparent;
 }
-.actions-link--button-lg {
-  padding-block: 0.5rem;
-  padding-inline: 2rem;
-}
 @media (any-hover: hover) {
   .actions-link--button:hover {
     background-color: transparent;
@@ -415,6 +411,28 @@ button[aria-label]::before {
   .actions-link--button:active {
     background-color: transparent;
     border: 0.0625rem solid var(--color-accent-base);
+  }
+}
+.actions-link--button-lg {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+}
+.actions-link--button-white {
+  color: var(--color-accent-base);
+  background-color: var(--color-light);
+}
+@media (any-hover: hover) {
+  .actions-link--button-white:hover {
+    color: var(--color-light);
+    background-color: var(--color-accent-base);
+    border: 0.0625rem solid var(--color-light);
+  }
+}
+@media (any-hover: none) {
+  .actions-link--button-white:active {
+    color: var(--color-light);
+    background-color: var(--color-accent-base);
+    border: 0.0625rem solid var(--color-light);
   }
 }
 .actions-link--arrow {
@@ -705,6 +723,51 @@ button[aria-label]::before {
 }
 .features-cards__description {
   padding-top: 0.6875rem;
+}
+
+.hero-alt {
+  padding-block: 5rem;
+  background-color: var(--color-accent-base);
+  color: var(--color-light);
+}
+.hero-alt__body-inner {
+  display: flex;
+  column-gap: 11.6875rem;
+}
+.hero-alt__title {
+  width: 25.1875rem;
+  font-size: 2.625rem;
+  color: var(--color-light);
+}
+.hero-alt__description {
+  padding-top: 1.125rem;
+  width: 30.0625rem;
+  font-size: 1.125rem;
+}
+.hero-alt__list {
+  padding-top: 1.25rem;
+}
+.hero-alt__item {
+  position: relative;
+  padding-left: 1.625rem;
+}
+.hero-alt__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../icons/complete.svg") center/contain no-repeat;
+  width: 1.0625rem;
+  height: 100%;
+}
+.hero-alt__actions-link {
+  margin-top: 1.6875rem;
+}
+
+.header,
+main > *:not(:last-child),
+.footer {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

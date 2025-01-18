@@ -1,0 +1,50 @@
+@use "../helpers/" as *;
+
+.hero-alt {
+  padding-block: rem(80);
+  background-color: var(--color-accent-base);
+  color: var(--color-light);
+
+  &__body {
+    &-inner {
+      display: flex;
+      column-gap: rem(187);
+    }
+  }
+
+  &__title {
+    width: rem(403);
+    font-size: rem(42);
+    color: var(--color-light);
+  }
+
+  &__description {
+    padding-top: rem(18);
+    width: rem(481);
+    font-size: rem(18);
+  }
+
+  &__list {
+    padding-top: rem(20);
+  }
+
+  &__item {
+    position: relative;
+    padding-left: rem(26);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../../icons/complete.svg") center/contain no-repeat;
+      width: rem(17);
+      height: 100%;
+    }
+  }
+
+  &__actions-link {
+    margin-top: rem(27);
+  }
+}
